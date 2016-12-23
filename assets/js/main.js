@@ -1,6 +1,6 @@
 (function($) {
     $(window).bind('load', function() {
-		$('#preloader').fadeOut();
+		//$('#preloader').fadeOut();
 	});
 
 	skel.breakpoints({
