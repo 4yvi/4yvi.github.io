@@ -1,4 +1,7 @@
 (function($) {
+    $(window).bind('load', function() {
+		$('#preloader').fadeOut();
+	});
 
 	skel.breakpoints({
 		xlarge:		'(max-width: 1680px)',
