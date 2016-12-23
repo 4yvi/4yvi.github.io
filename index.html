@@ -7,6 +7,51 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<noscript><liЈnk rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* preloader */
+			#preloader{
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #000;
+				z-index: 9999;
+				text-align: center;
+			}
+
+			#preloader span{
+				margin-top: 25%;
+			}
+
+			.loader{
+				-webkit-animation: preloader 1.5s infinite linear;
+				-moz-animation: preloader 1.5s infinite linear;
+				-ms-animation: preloader 1.5s infinite linear;
+				-o-animation: preloader 1.5s infinite linear;
+				animation: preloader 1.5s infinite linear;
+			}
+
+			@-webkit-keyframes preloader {
+				to { -webkit-transform: rotate(360deg); }
+			}
+
+			@-moz-keyframes preloader {
+				to { -moz-transform: rotate(360deg); }
+			}
+
+			@-ms-keyframes preloader {
+				to { -ms-transform: rotate(360deg); }
+			}
+
+			@-o-keyframes preloader {
+				to { -o-transform: rotate(360deg); }
+			}
+
+			@keyframes preloader {
+				to { transform: rotate(360deg); }
+			}
+		</style>
 	</head>
 	<body>
 		<div id="preloader">
