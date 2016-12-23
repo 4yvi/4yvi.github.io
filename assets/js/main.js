@@ -15,7 +15,11 @@
             return Math.round(Math.random() * (max - min) + min);
         }
         var bg = getRandomArbitary(1,37);
-        $('#bg span').attr('style','background-image: url(/images/lib/'+ getRandomArbitary(1,37) +'.jpg);');
+        var expansion = '.jpg';
+        if(bg == 24 || bg == 26){
+            expansion = '.jpeg';
+		}
+        $('#bg span').attr('style','background-image: url(/images/lib/'+ bg + expansion +');');
 
 		var	$window = $(window),
 			$body = $('body'),
