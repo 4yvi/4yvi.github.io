@@ -1356,6 +1356,9 @@
 			#header .content p br {
 				display: none;
 			}
+			#footer .reload-picture{
+				display: none;
+			}
 
 		}
 
@@ -1572,6 +1575,13 @@
 			opacity: 0.75;
 			margin-bottom: 0;
 			text-transform: uppercase;
+		}
+		#footer .reload-picture{
+			position: fixed;
+			right: 60px;
+			button: 60px;
+			font-size: 0.6rem;
+			opacity: 0.55;
 		}
 
 		body.is-article-visible #footer {
