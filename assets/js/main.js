@@ -19,7 +19,7 @@
         }
         var bg = getRandomArbitary(1,37);
         var expansion = '.jpg';
-        if(bg == 24 || bg == 26){
+        if(bg == 24){
             expansion = '.jpeg';
 		}
         $('#bg span').attr('style','background-image: url(/images/lib/'+ bg + expansion +');');
