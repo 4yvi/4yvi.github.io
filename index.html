@@ -1,15 +1,49 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en" data-lang="en">
 	<head>
-		<title>Software engineer - Trofimov Aleksey</title>
+		<title>Aleksei Trofimov - Solutions Architect, Team Lead, Go Engineer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="keywords" content="go php web develop разработчик веб-разработчик symfony" />
-		<meta name="description" content="Имею большой опыт разработки проектов различной сложности, в т.ч. высоконагруженных и мультиязычных проектов." />
+		<meta name="keywords" content="solutions architect, team lead, go, golang, architecture, platform engineering, microservices, kafka, kubernetes, архитектор" />
+		<meta name="description" content="Solutions Architect, Team Lead and Go Engineer with 13 years in IT. Architecture governance, internal engineering platform, monolith decomposition, M&amp;A integration." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<noscript><liЈnk rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style type="text/css">
+			/* language switch */
+			html[data-lang="en"] .ru,
+			html[data-lang="ru"] .en { display: none !important; }
+
+			.lang-switch {
+				position: fixed;
+				top: 1rem;
+				right: 1rem;
+				z-index: 10001;
+				font-size: 0.75rem;
+				letter-spacing: 0.1rem;
+				text-transform: uppercase;
+			}
+
+			.lang-switch a {
+				color: rgba(255, 255, 255, 0.5);
+				border-bottom: none;
+				cursor: pointer;
+				padding: 0.25rem 0.4rem;
+			}
+
+			html[data-lang="en"] .lang-switch a[data-set-lang="en"],
+			html[data-lang="ru"] .lang-switch a[data-set-lang="ru"] {
+				color: #ffffff;
+				border-bottom: solid 1px #ffffff;
+			}
+
+			/* experience */
+			.job { margin-bottom: 2.5rem; }
+			.job h3 { margin-bottom: 0.25rem; }
+			.job .meta { font-size: 0.85rem; opacity: 0.7; margin-bottom: 1rem; }
+			.job h4 { margin: 1.25rem 0 0.5rem 0; font-size: 0.8rem; letter-spacing: 0.1rem; text-transform: uppercase; }
+			.job ul { margin-bottom: 0.5rem; }
+
 			/* preloader */
 			#preloader{
 				position: fixed;
@@ -59,6 +93,11 @@
 		<div id="preloader">
 			<span class="fa fa-cog fa-4x fa-fw loader"></span>
 		</div>
+
+		<div class="lang-switch">
+			<a data-set-lang="en">EN</a> / <a data-set-lang="ru">RU</a>
+		</div>
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -69,14 +108,16 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Trofimov Aleksey</h1>
-								<p>Solution Architect, Team Lead, and Golang Software Engineer</p>
+								<h1><span class="en">Aleksei Trofimov</span><span class="ru">Алексей Трофимов</span></h1>
+								<p>Solutions Architect, Team Lead, <span class="en">Go Engineer</span><span class="ru">Go-разработчик</span></p>
 							</div>
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#about">About me</a></li>
-								<li><a href="#contact">Contacts</a></li>
+								<li><a href="#about"><span class="en">About</span><span class="ru">О себе</span></a></li>
+								<li><a href="#experience"><span class="en">Experience</span><span class="ru">Опыт</span></a></li>
+								<li><a href="#skills"><span class="en">Skills</span><span class="ru">Навыки</span></a></li>
+								<li><a href="#contact"><span class="en">Contact</span><span class="ru">Контакты</span></a></li>
 							</ul>
 						</nav>
 					</header>
@@ -84,60 +125,226 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- about -->
+						<!-- About -->
 							<article id="about">
-								<h2 class="major">About me</h2>
+								<h2 class="major"><span class="en">About me</span><span class="ru">О себе</span></h2>
 								<section>
-									<p>👋 Hi! I'm a Solution Architect, Team Lead, and Golang Software Engineer with 9 years of experience developing high-loaded complex systems.</p>
-									<p>💼 I have managed and built cross-functional teams from scratch, with up to 20 direct reports, supporting legacy projects and designing new ones with the potential to grow. My main tasks include designing scalable and secure architectural solutions and creating high-performance and scalable applications.</p>
-									<p>💡 I have a deep understanding of modern technologies and development standards. My experience includes microservices, web services, real-time systems, and integration with various systems and databases. I'm also familiar with AWS and Kubernetes.</p>
-									<p>🚀 I strive to ensure a combination of technologies and methodologies in evolving IT systems and I am passionate about solving complex technical problems.</p>
-									<p>📚 Always on the path of self-education and development, always looking for new technologies, and striving to be at the forefront of the software development industry.</p>
-									<p>🧰 My technology toolbox includes experience with:
-										<ul>
-											<li>Golang</li>
-											<li>PHP</li>
-											<li>gRPC</li>
-											<li>Docker</li>
-											<li>AWS</li>
-											<li>Kubernetes</li>
-											<li>MySQL</li>
-											<li>PostgreSQL</li>
-											<li>Kafka</li>
-											<li>Redis</li>
-											<li>RabbitMQ</li>
-											<li>Memcached</li>
-											<li>Elasticsearch</li>
-											<li>Sphinx</li>
-										</ul>
-									</p>
+									<p class="en">Architect with 13 years in IT, including more than 6 years at Lenta Online. Built architecture governance, an internal engineering platform and reliability processes across the company, and led IT integration during a merger of large retail chains and the migration of the entire IT landscape. Built cross-functional teams from scratch with up to 20 direct reports, and served as interim CTO.</p>
+									<p class="ru">Архитектор с 13 годами в IT, из них более 6 лет в Ленте Онлайн. Выстраивал архитектурное управление, инженерную платформу и процессы надежности на уровне компании, руководил интеграцией IT при слиянии крупных розничных сетей и миграцией всего IT-ландшафта. Собирал кросс-функциональные команды с нуля, до 20 прямых подчиненных, временно исполнял обязанности CTO.</p>
 								</section>
-<!--								<span class="image main"><img src="images/IMG_0442.JPG" alt="" /></span>-->
-
 							</article>
 
-						<!-- Work -->
-							<!--<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-							</article>-->
+						<!-- Experience -->
+							<article id="experience">
+								<h2 class="major"><span class="en">Experience</span><span class="ru">Опыт работы</span></h2>
+
+								<section class="job">
+									<h3><span class="en">Lenta, Lenta Online</span><span class="ru">Лента, Лента Онлайн</span></h3>
+									<p class="meta en">Moscow, Russia · May 2020 to present<br />Solutions Architect since January 2023, Team Lead since January 2021, Senior Software Engineer since May 2020. Lenta Online is the app and website for grocery delivery from Lenta stores.</p>
+									<p class="meta ru">Москва · май 2020 по настоящее время<br />Solutions Architect с января 2023, Team Lead с января 2021, Senior Software Engineer с мая 2020. Лента Онлайн это приложение и сайт доставки товаров из магазинов Ленты.</p>
+
+									<h4><span class="en">Architecture governance</span><span class="ru">Архитектурное управление</span></h4>
+									<ul class="en">
+										<li>Set up the architecture committee process and architecture principles, introduced ADRs.</li>
+										<li>Ran architecture reviews and audits of projects for scalability and performance.</li>
+										<li>Created the company technology radar.</li>
+										<li>Introduced non-functional requirements (NFR) as a standard for design and acceptance.</li>
+										<li>Set up a technical debt management process.</li>
+										<li>Built a service ownership map so any team can quickly find the owner of a system.</li>
+									</ul>
+									<ul class="ru">
+										<li>Выстроил процесс архитектурных комитетов и принципы работы с архитектурой, внедрил практику ADR.</li>
+										<li>Проводил архитектурные ревью и аудиты проектов на масштабируемость и производительность.</li>
+										<li>Сформировал технический радар компании.</li>
+										<li>Внедрил нефункциональные требования (NFR) как стандарт проектирования и приемки решений.</li>
+										<li>Выстроил процесс ведения технического долга.</li>
+										<li>Создал карту сервисов с зонами ответственности, любая команда быстро находит владельца системы.</li>
+									</ul>
+
+									<h4><span class="en">M&amp;A integration</span><span class="ru">Интеграция при слиянии компаний</span></h4>
+									<ul class="en">
+										<li>Took part in IT integration during the merger of several large retail chains and prepared the IT landscape for expanded operations.</li>
+										<li>Took part in merging the storefronts of Lenta, Lenta Online, Utkonos, OBI, Monetka, Ulybka Radugi and other group brands.</li>
+									</ul>
+									<ul class="ru">
+										<li>Участвовал в IT-интеграции при объединении нескольких крупных розничных сетей, подготовил IT-ландшафт к росту операций.</li>
+										<li>Участвовал в объединении витрин Ленты, Ленты Онлайн, Утконоса, ОБИ, Монетки, Улыбки радуги и других брендов группы.</li>
+									</ul>
+
+									<h4><span class="en">Internal engineering platform (PaaS)</span><span class="ru">Инженерная платформа (PaaS)</span></h4>
+									<ul class="en">
+										<li>Designed and launched an internal platform bridging development and DevOps. Creating a new service went from weeks or months to a few minutes.</li>
+										<li>Every new service gets monitoring, alerts, dashboards, secrets and base databases out of the box.</li>
+										<li>Built a decentralized system for sharing gRPC, OpenAPI and Kafka contracts. It shortened contract alignment and removed nearly all backward compatibility incidents.</li>
+										<li>Introduced dedicated contracts for analytics, which stopped breakages in analytics integrations.</li>
+										<li>Introduced distributed tracing and standardized logging.</li>
+									</ul>
+									<ul class="ru">
+										<li>Спроектировал и внедрил внутреннюю платформу на стыке разработки и DevOps. Создание нового сервиса сократилось с недель и месяцев до нескольких минут.</li>
+										<li>При развертывании сервис сразу получает мониторинг, алерты, дашборды, секреты и базовые БД.</li>
+										<li>Разработал систему децентрализованного обмена gRPC, OpenAPI и Kafka контрактами. Это сократило согласование контрактов и устранило почти все инциденты обратной совместимости.</li>
+										<li>Внедрил отдельные контракты для аналитики, что исключило поломки их интеграций.</li>
+										<li>Внедрил распределенную трассировку и стандартизированное логирование.</li>
+									</ul>
+
+									<h4><span class="en">System architecture</span><span class="ru">Архитектура систем</span></h4>
+									<ul class="en">
+										<li>Designed and run a phased monolith decomposition strategy. All critical functionality has been moved out, which increased overall system stability several times over.</li>
+										<li>Introduced Go and Kafka for asynchronous service communication, and moved service-to-service communication to gRPC.</li>
+										<li>Designed and built more than 20 microservices, including pricing, inventory management and product information.</li>
+										<li>Introduced unified entry points for user traffic and external vendor integrations, giving central control of traffic.</li>
+										<li>Built a high-speed CDN for product images.</li>
+										<li>Built integrations with SAP (products, inventory, pricing) and with marketplaces, including AliExpress.</li>
+										<li>Took part in backend design and development of the Lenta Online web version.</li>
+									</ul>
+									<ul class="ru">
+										<li>Разработал и веду стратегию поэтапного распила монолита. Вынесен весь критичный функционал, что в разы повысило стабильность системы.</li>
+										<li>Внедрил Go и Kafka для асинхронного взаимодействия сервисов, перевел межсервисное взаимодействие на gRPC.</li>
+										<li>Спроектировал и разработал более 20 микросервисов, включая ценообразование, управление остатками и информацию о товарах.</li>
+										<li>Внедрил единые точки входа для пользовательского трафика и интеграций с внешними вендорами, что дало централизованный контроль трафика.</li>
+										<li>Построил высокоскоростной CDN для изображений товаров.</li>
+										<li>Разработал интеграции с SAP (товары, остатки, цены) и маркетплейсами, включая AliExpress.</li>
+										<li>Участвовал в проектировании и разработке бэкенда веб-версии Ленты Онлайн.</li>
+									</ul>
+
+									<h4><span class="en">Reliability and operations</span><span class="ru">Надежность и эксплуатация</span></h4>
+									<ul class="en">
+										<li>Set up the incident management process, including L2 support and on-call rotations for DevOps engineers and developers.</li>
+										<li>Designed a monitoring system for L2 that made incident response 4 times faster.</li>
+										<li>Introduced weekly incident reviews with tracking of follow-up fixes.</li>
+										<li>Prepared infrastructure for peak seasons, finding and removing bottlenecks.</li>
+										<li>Led the migration of the entire IT landscape between providers, to on-premise data centers and to Yandex Cloud.</li>
+										<li>Organized preparation for and passing of audits.</li>
+									</ul>
+									<ul class="ru">
+										<li>Выстроил процесс управления инцидентами, включая L2 поддержку и дежурства DevOps-инженеров и разработчиков.</li>
+										<li>Спроектировал систему мониторинга для L2, время реакции на инциденты сократилось в 4 раза.</li>
+										<li>Внедрил еженедельные разборы инцидентов с контролем исправлений.</li>
+										<li>Готовил инфраструктуру к высоким сезонам, находил и устранял узкие места.</li>
+										<li>Руководил миграцией всего IT-ландшафта между провайдерами, в собственные ЦОД и в Yandex Cloud.</li>
+										<li>Организовывал подготовку и прохождение аудитов.</li>
+									</ul>
+
+									<h4><span class="en">Leadership and processes</span><span class="ru">Руководство и процессы</span></h4>
+									<ul class="en">
+										<li>Hired and launched more than 10 cross-functional teams, with up to 20 direct reports.</li>
+										<li>Served as interim CTO during a transition period.</li>
+										<li>Introduced AI tools for DevOps, support and development, and built a shared set of AI skills for developers.</li>
+										<li>Led the rollout of the Sova corporate messenger and the later move to Mattermost.</li>
+									</ul>
+									<ul class="ru">
+										<li>Собрал и запустил более 10 кросс-функциональных команд, до 20 прямых подчиненных.</li>
+										<li>Временно исполнял обязанности CTO в переходный период.</li>
+										<li>Внедрил AI-инструменты в работу DevOps, поддержки и разработки, сформировал общий набор AI-скиллов для разработчиков.</li>
+										<li>Руководил внедрением корпоративного мессенджера Сова и последующим переходом на Mattermost.</li>
+									</ul>
+								</section>
+
+								<section class="job">
+									<h3>.defa integration</h3>
+									<p class="meta en">Moscow, Russia · Team Lead · June 2017 to May 2020</p>
+									<p class="meta ru">Москва · Team Lead · июнь 2017 по май 2020</p>
+									<p class="en">Led a development team, designed system architecture, administered servers and implemented cloud solutions, set up CI/CD and hired developers. Projects:</p>
+									<p class="ru">Руководил командой разработки, проектировал архитектуру, администрировал серверы и внедрял облачные решения, настраивал CI/CD, нанимал разработчиков. Проекты:</p>
+									<ul class="en">
+										<li>LMS for Russia's largest oil producer</li>
+										<li>loyalty and promotion systems for two of the largest Russian banks</li>
+										<li>internal portal for an Austrian banking and insurance group</li>
+										<li>trade-in service and used car sales portal for Renault Russia</li>
+										<li>official websites for KIA and Haval in Russia</li>
+										<li>dealer portal for Daimler KAMAZ Rus</li>
+										<li>platform for selling seized property for the Deposit Insurance Agency</li>
+										<li>online apartment purchase service for a luxury real estate developer</li>
+										<li>subscription service for a publishing house</li>
+									</ul>
+									<ul class="ru">
+										<li>LMS для крупнейшей нефтедобывающей компании России</li>
+										<li>системы лояльности и промоакций для двух крупнейших банков России</li>
+										<li>внутренний портал для австрийской банковской и страховой группы</li>
+										<li>trade-in сервис и портал продажи автомобилей с пробегом для Renault Россия</li>
+										<li>официальные сайты KIA и Haval в России</li>
+										<li>дилерский портал Daimler KAMAZ Rus</li>
+										<li>система продажи залогового имущества для Агентства по страхованию вкладов</li>
+										<li>сервис онлайн-покупки квартир для девелопера премиум-сегмента</li>
+										<li>сервис подписок для издательского дома</li>
+									</ul>
+								</section>
+
+								<section class="job">
+									<h3><span class="en">Soobshcha Digital Agency</span><span class="ru">Диджитал агентство Сообща</span></h3>
+									<p class="meta en">Moscow, Russia · Senior Software Engineer · November 2016 to June 2017</p>
+									<p class="meta ru">Москва · Senior Software Engineer · ноябрь 2016 по июнь 2017</p>
+									<p class="en">Development and support of systems of varying complexity.</p>
+									<p class="ru">Разработка и поддержка систем разной сложности.</p>
+								</section>
+
+								<section class="job">
+									<h3>Hawking Brothers</h3>
+									<p class="meta en">Vladimir, Russia · Software Engineer · August 2015 to November 2016</p>
+									<p class="meta ru">Владимир · Software Engineer · август 2015 по ноябрь 2016</p>
+									<p class="en">Built solutions for large retailers, insurance companies and car manufacturers.</p>
+									<p class="ru">Разработка решений для крупных ритейлеров, страховых компаний и автопроизводителей.</p>
+								</section>
+
+								<section class="job">
+									<h3><span class="en">Vladimir Regional Union of Consumer Societies</span><span class="ru">Владимирский областной союз потребительских обществ</span></h3>
+									<p class="meta en">System Administrator and Programmer · June 2013 to June 2015</p>
+									<p class="meta ru">Системный администратор и программист · июнь 2013 по июнь 2015</p>
+									<p class="en">Developed the website and accounting systems (PHP, JS, MySQL, 1C), supported servers and networks.</p>
+									<p class="ru">Разработка сайта и учетных систем (PHP, JS, MySQL, 1С), поддержка серверов и сетей.</p>
+								</section>
+							</article>
+
+						<!-- Skills -->
+							<article id="skills">
+								<h2 class="major"><span class="en">Skills</span><span class="ru">Ключевые навыки</span></h2>
+								<section>
+									<h4><span class="en">Architecture</span><span class="ru">Архитектура</span></h4>
+									<p class="en">Enterprise and solution architecture, ADR, NFR, microservices, monolith decomposition, contract-first integration, platform engineering, M&amp;A integration</p>
+									<p class="ru">Enterprise и Solution архитектура, ADR, NFR, микросервисы, распил монолита, контрактное взаимодействие, Platform Engineering, интеграция при M&amp;A</p>
+
+									<h4><span class="en">Technologies</span><span class="ru">Технологии</span></h4>
+									<p>Go, PHP, gRPC, Kafka, RabbitMQ, Docker, Kubernetes, AWS, Yandex Cloud, on-premise, PostgreSQL, MySQL, Redis, Memcached, Elasticsearch, Sphinx, Ansible, CDN, observability</p>
+
+									<h4><span class="en">Management</span><span class="ru">Управление</span></h4>
+									<p class="en">incident management, hiring and team leadership, process building, AI in software development</p>
+									<p class="ru">инцидент-менеджмент, найм и руководство командами, построение процессов, AI в разработке</p>
+								</section>
+								<section>
+									<h3 class="major"><span class="en">Education</span><span class="ru">Образование</span></h3>
+									<ul class="en">
+										<li>Vladimir State University named after A.G. and N.G. Stoletovs, 2014 to 2016</li>
+										<li>Vladimir Aviation Mechanical College, 2011 to 2014</li>
+									</ul>
+									<ul class="ru">
+										<li>Владимирский государственный университет им. А.Г. и Н.Г. Столетовых, 2014 по 2016</li>
+										<li>Владимирский авиамеханический колледж, 2011 по 2014</li>
+									</ul>
+									<h3 class="major"><span class="en">Certifications</span><span class="ru">Сертификаты</span></h3>
+									<ul>
+										<li>Application Security and Secure Coding Training</li>
+									</ul>
+									<h3 class="major"><span class="en">Languages</span><span class="ru">Языки</span></h3>
+									<p class="en">Russian (native), English (limited working proficiency)</p>
+									<p class="ru">Русский (родной), английский (Limited Working)</p>
+								</section>
+							</article>
 
 						<!-- Contact -->
 							<article id="contact">
-								<h2 class="major">Contacts</h2>
-								<p>
-									<div>
-										Location - Moscow Russia
-									</div>
-									<div>
-										Telegram - <a href="https://t.me/oi4yvi" target="_blank">@oi4yvi</a>
-									</div>
-									<div>
-										Email - <a href="mailto:gadruit@gmail.com">gadruit@gmail.com</a>
-									</div>
-								</p>
+								<h2 class="major"><span class="en">Contact</span><span class="ru">Контакты</span></h2>
+								<div>
+									<span class="en">Location - Los Angeles, USA</span><span class="ru">Место жительства - Лос-Анджелес, США</span>
+								</div>
+								<div>
+									<span class="en">Authorized to work in the United States</span><span class="ru">Есть разрешение на работу в США</span>
+								</div>
+								<div>
+									Telegram - <a href="https://t.me/oi4yvi" target="_blank">@oi4yvi</a>
+								</div>
+								<div>
+									Email - <a href="mailto:gadruit@gmail.com">gadruit@gmail.com</a>
+								</div>
 								<ul class="icons">
 									<li><a href="https://www.instagram.com/io4yvi/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 									<li><a href="https://github.com/4yvi" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>
@@ -145,255 +352,13 @@
 								</ul>
 							</article>
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button special">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions vertical">
-										<li><a href="#" class="button special">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button special">Special</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button special icon fa-download">Icon</a></li>
-										<li><a href="#" class="button icon fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button special disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="field half first">
-											<label for="demo-name">Name</label>
-											<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-										</div>
-										<div class="field half">
-											<label for="demo-email">Email</label>
-											<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-										</div>
-										<div class="field">
-											<label for="demo-category">Category</label>
-											<div class="select-wrapper">
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-										</div>
-										<div class="field half first">
-											<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-											<label for="demo-priority-low">Low</label>
-										</div>
-										<div class="field half">
-											<input type="radio" id="demo-priority-high" name="demo-priority">
-											<label for="demo-priority-high">High</label>
-										</div>
-										<div class="field half first">
-											<input type="checkbox" id="demo-copy" name="demo-copy">
-											<label for="demo-copy">Email me a copy</label>
-										</div>
-										<div class="field half">
-											<input type="checkbox" id="demo-human" name="demo-human" checked>
-											<label for="demo-human">Not a robot</label>
-										</div>
-										<div class="field">
-											<label for="demo-message">Message</label>
-											<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="special" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
 					</div>
 
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; 1993 - 2024</p>
-						<p class="reload-picture"><i class="fa fa-refresh fa-spin fa-fw" aria-hidden="true"></i> Reload this page <i class="fa fa-github-alt" aria-hidden="true"></i></p>
+						<p class="copyright">&copy; <span id="year">2026</span> Aleksei Trofimov</p>
+						<p class="reload-picture"><i class="fa fa-refresh fa-spin fa-fw" aria-hidden="true"></i> <span class="en">Reload this page</span><span class="ru">Обновить страницу</span> <i class="fa fa-github-alt" aria-hidden="true"></i></p>
 					</footer>
 
 			</div>
@@ -408,8 +373,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<script src="assets/js/skel.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/lang.js"></script>
 		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter41817509 = new Ya.Metrika({ id:41817509, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/41817509" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+		<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter41817509 = new Ya.Metrika({ id:41817509, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/41817509" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 		<!-- /Yandex.Metrika counter -->
 
 	</body>
